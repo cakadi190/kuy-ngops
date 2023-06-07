@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:paddingTop="24sp"
+        android:paddingStart="16sp"
+        android:paddingEnd="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/titleHead">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleHeadLeft"
+            tools:ignore="UselessParent">
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"
+                android:text="@string/textHomeTitle" />
+
+            <TextView
+                android:fontFamily="@font/inter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4sp"
+                android:text="@string/textHomeDesc"
+                android:textSize="14sp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:hint="@string/placeholderSearch"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:maxLines="1"
+            android:fontFamily="@font/inter"
+            android:id="@+id/textSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Perkopian Duniawi</string>
+    <string name="textClock">10.00 - 22.00</string>
+    <string name="textRating">4.5 / 5.0</string>
+    <string name="altTextStar">Star Image</string>
+    <string name="altTextClock">Clock Image</string>
+    <string name="textCafeName">Cafe Name</string>
+    <string name="textCafeRegion">Cafe Region</string>
+    <string name="menu_mapOpen">Open Map</string>
+    <string name="menu_about">About</string>
+    <string name="textCafeDesc">Lorem ipsum dolor sit amet constecteur</string>
+    <string name="textCafeLocation">Jl. Kopi Kenangan, Margomulyo, Ngawi, Jawa Timur</string>
+    <string name="textHomeTitle">Hello Stranger!</string>
+    <string name="textHomeDesc">Here a few information of coffee and space place for you.</string>
+    <string name="placeholderSearch">Search cafe name here</string>
+    <string name="textLoading">Loading</string>
+    <string name="textAppVersion">1.0.0</string>
+    <string name="textAppDesc">Halo rek, ini adalah aplikasi untuk memenuhi syarat Ujian Akhir Semester mata kuliah Pemrograman Mobile 1 dan untuk membantu temen-temen untuk mencari tempat perkopian yang enak, instagramable dan nyaman.</string>
+</resources>

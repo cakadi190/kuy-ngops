@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardElevation="0sp"
+    app:cardCornerRadius="0sp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/cafe_item">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/metaTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/metaData">
+
+            <TextView
+                android:id="@+id/cafeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16sp"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="start"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:text="@string/textCafeName"
+                android:textFontWeight="900"
+                android:textSize="20sp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cafeRegion"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:id="@+id/cafeRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_badge"
+                android:fontFamily="@font/inter"
+                android:gravity="end"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="4dp"
+                android:text="@string/textCafeRegion"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:paddingTop="8sp"
+            android:id="@+id/metaData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/metaTitle"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/altTextStar"
+                    android:id="@+id/imageRatingStar"
+                    android:layout_width="14sp"
+                    android:layout_height="14sp"
+                    app:srcCompat="@drawable/star" />
+
+                <TextView
+                    android:id="@+id/cafeRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4sp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/textRating" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="8sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/altTextClock"
+                    android:id="@+id/imageClock"
+                    android:layout_width="14sp"
+                    android:layout_height="14sp"
+                    app:srcCompat="@drawable/clock" />
+
+                <TextView
+                    android:id="@+id/cafeClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4sp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/textClock" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

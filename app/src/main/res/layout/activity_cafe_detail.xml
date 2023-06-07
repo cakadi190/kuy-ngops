@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CafeDetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="wrap_content"
+            android:layout_height="200sp"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            android:hardwareAccelerated="false"
+            app:srcCompat="@drawable/cafe"
+            tools:layout_editor_absoluteX="87dp"
+            android:contentDescription="@string/textCafeName" />
+
+        <include
+            android:id="@+id/cardItem"
+            layout="@layout/cafe_list" />
+
+        <TextView
+            android:padding="16sp"
+            android:fontFamily="@font/inter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cafeDescription"
+            android:text="@string/textCafeDesc" />
+
+        <TextView
+            android:gravity="start"
+            android:paddingBottom="16sp"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:drawablePadding="8sp"
+            app:iconSize="14dp"
+            android:fontFamily="@font/inter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cafeNameText"
+            android:text="@string/textCafeName"
+            app:drawableStartCompat="@drawable/pencil" />
+        <TextView
+            android:gravity="start"
+            android:paddingBottom="16sp"
+            android:paddingStart="16sp"
+            android:fontFamily="@font/inter"
+            android:paddingEnd="16sp"
+            android:drawablePadding="8sp"
+            app:iconSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cafeLocation"
+            android:text="@string/textCafeLocation"
+            app:drawableStartCompat="@drawable/maps" />
+        <TextView
+            android:gravity="start"
+            android:paddingBottom="16sp"
+            android:paddingStart="16sp"
+            android:fontFamily="@font/inter"
+            android:paddingEnd="16sp"
+            android:drawablePadding="8sp"
+            app:iconSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cafeRatingText"
+            android:text="@string/textRating"
+            app:drawableStartCompat="@drawable/star" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
